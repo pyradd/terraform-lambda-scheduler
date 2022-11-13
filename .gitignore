@@ -139,12 +139,12 @@ cookie_kubeflow_inital_session
 # terraform related files
 
 # Local .terraform directories
-*/.terraform/*
+.terraform/*
 
 # .tfstate files
-*/*.tfstate
-*/*.tfstate.*
-*/.terraform.**
+*.tfstate
+*.tfstate.*
+.terraform.**
 
 # Crash log files
 */crash.log
