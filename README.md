@@ -1,4 +1,4 @@
-# terraform-iac
+# Scheduled aws-lambda deployment with terraform
 
 A minimal example of deploying a lambda funtion and an eventbridge scheduler with terraform IaC.
 
@@ -8,9 +8,22 @@ A minimal example of deploying a lambda funtion and an eventbridge scheduler wit
 
 `aws cli`
 
+## Repository Structure
+
+```
+Lambda-function: Module directory containing the lambda function and all its required resources
+lambda-scheduler: Module directory containing aws eventbridge scheduler and all its required resources
+main.tf: Entrypoint to the terraform module
+providers.tf:  aws provider configuration
+root.tf: Defines terraform provider and terraform version constraint
+variables.tf: Defines variables to be used by the root module
+locals.tf: Defines local variables to be used by the terraform modules 
+```
+
+The individual terraform scripts have been explained via comments within the scripts.
 
 ## Usage
-1. Intialize terraform
+1. Initialize
 
     `terraform init`
 
